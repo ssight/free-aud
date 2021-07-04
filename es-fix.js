@@ -12,5 +12,5 @@ dynamicPatches.forEach(i => {
 })
 
 let util = fs.readFileSync("patches/util.js").toString();
-util = util.replace("exports.", "module.exports.");
+util = util.replace("exports.getSrcFiles = void 0;", "").replace("\nexports.getSrcFiles = ", "module.exports.getSrcFiles = ");
 fs.writeFileSync("patches/util.js", util);
