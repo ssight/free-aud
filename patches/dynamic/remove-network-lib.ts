@@ -4,8 +4,8 @@ import { resolve } from 'path';
 export default function patchRemoveNetworkLib(rootDir: string) {
     let libDir = resolve(rootDir, "libraries"), libCMakePath = resolve(libDir, "CMakeLists.txt");
 
-    // rmSync(resolve(libDir, "lib-network-manager"), { recursive: true });
-    // rmSync(resolve(libDir, "lib-sentry-reporting"), { recursive: true });
+    rmSync(resolve(libDir, "lib-network-manager"), { recursive: true });
+    rmSync(resolve(libDir, "lib-sentry-reporting"), { recursive: true });
 
     let libCMake: string = readFileSync(libCMakePath, 'utf-8');
     let patchCMake = libCMake
