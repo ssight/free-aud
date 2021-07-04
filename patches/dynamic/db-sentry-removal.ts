@@ -7,7 +7,7 @@ export default function removeDBException(rootDir: string) {
     srcFiles.forEach(srcFile => {
         let src = readFileSync(srcFile, 'utf-8');
         
-        let patchSrc = src.replace(/ADD_EXCEPTION_CONTEXT\((\r\n)?.*?;/g, "");
+        let patchSrc = src.replace(/ADD_EXCEPTION_CONTEXT\([\s\S]*?\);/g, "");
 
         if (patchSrc.includes("ADD_EXCEPTION_CONTEXT"))  console.log("NO!");
 
