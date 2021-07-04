@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/ssight/free-aud/issues"
   },
-  "homepage": "https://github.com/ssight/free-aud#readme"
+  "homepage": "https://github.com/ssight/free-aud#readme",
+  "devDependencies": {
+    "@types/node": "^16.0.0"
+  }
 }
