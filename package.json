@@ -23,5 +23,6 @@
   "homepage": "https://github.com/ssight/free-aud#readme",
   "devDependencies": {
     "@types/node": "^16.0.0"
-  }
+  },
+  "type": "module"
 }
