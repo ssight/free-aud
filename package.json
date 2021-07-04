@@ -1,0 +1,24 @@
+{
+  "name": "free-aud",
+  "version": "1.0.0",
+  "description": "A collection of open source patches that aim to remove all tracking in the free, \"open source\" audio editor, Audacity.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssight/free-aud.git"
+  },
+  "keywords": [
+    "audacity",
+    "open-source",
+    "privacy"
+  ],
+  "author": "ssight",
+  "license": "GPL-2.0-only",
+  "bugs": {
+    "url": "https://github.com/ssight/free-aud/issues"
+  },
+  "homepage": "https://github.com/ssight/free-aud#readme"
+}
